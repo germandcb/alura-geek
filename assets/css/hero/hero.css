@@ -1,0 +1,32 @@
+.hero {
+    background: url(../../img/banner.png) no-repeat center / cover;
+    padding: 10rem 0 4rem 0 ;
+}
+
+.hero__main{
+   display: flex;
+   flex-direction: column;
+}
+
+.hero__title,
+.hero__description{
+    margin: unset;
+    color: var(--white);
+    padding-bottom: 0.6rem;
+}
+
+.hero__title {
+    font-size: 4.5rem;
+}
+
+.hero__description {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.hero__btn {
+    padding: 2rem 2rem;
+    color: var(--white);
+    background-color: var(--main-blue);
+}
+
