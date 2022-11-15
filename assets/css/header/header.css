@@ -1,0 +1,54 @@
+/* header */
+.header {
+    padding: 2rem 0;
+}
+/* header main */
+.header__main {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header logo */
+.header__logo {}
+
+.header__logo__box {
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+}
+.header__logo__description {
+    font-size: 2.2rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.header__logo__description--active {
+    color: var(--main-blue);
+}
+
+/* header search */
+.header__search {
+    width: 60%;
+}
+.header__search__input{
+    background-color: var(--fondo1);
+    border-radius: 5rem;
+    padding: 1.5rem 3rem; 
+    border: none;
+    width: 40%;
+    outline: none;
+}
+.header__search__input::after {
+    content: url(../../img/icons/lupa.png);
+}
+
+/* header login */
+.header__login {
+    background-color: var(--white);
+    color: var(--main-blue);
+}
+.header__login:hover {
+    color: var(--white);
+    background-color: var(--main-blue);
+}

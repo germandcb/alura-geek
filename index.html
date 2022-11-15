@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura | Geek </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;600;800&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/header/header.css">
 </head>
 <body>
     <header class="header">
-        <div class="header__main contenedor">
+        <nav class="header__main contenedor">
             <div class="header__logo">
-                <a href="./index.html">
+                <a href="./index.html" class="header__logo__box">
                     <img src="./assets/img/icons/logo.png" alt="logo alura geek" class="header__logo__img">
                     <p class="header__logo__description"><span class="header__logo__description--active">Alura</span>Geek</p>
                 </a>
             </div>
             <div class="header__search">
-                <input type="search" class="header__search__input" value="¿Qué deseas buscar?">
+                <input type="search" class="header__search__input" placeholder="¿Qué deseas buscar?">
             </div>
-            <input type="submit" class="header__login btn" value="Login">
-        </div>
+            <a href="./login.html" class="header__login btn">Login</a>
+        </nav>
     </header>
 
     <main class="main">
