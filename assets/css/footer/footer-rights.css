@@ -1,0 +1,12 @@
+.footer__rights__description {
+    text-align: center;
+    color: var(--second-color);
+}
+.german {
+    font-weight: 500;
+    color: var(--second-color);
+}
+.german:hover {
+    color: var(--main-blue);
+    cursor: pointer;
+}

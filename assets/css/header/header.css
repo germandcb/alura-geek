@@ -12,11 +12,6 @@
 /* header logo */
 .header__logo {}
 
-.header__logo__box {
-    align-items: center;
-    gap: 1rem;
-    display: flex;
-}
 .header__logo__description {
     font-size: 2.2rem;
     color: var(--black);

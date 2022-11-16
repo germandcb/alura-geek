@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="./assets/css/hero/hero.css">
     <link rel="stylesheet" href="./assets/css/products/products.css">
     <link rel="stylesheet" href="./assets/css/products/product-box.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer-contact.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer-rights.css">
 </head>
 <body>
     <header class="header">
         <nav class="header__main contenedor">
             <div class="header__logo">
-                <a href="./index.html" class="header__logo__box">
+                <a href="./index.html" class="header__logo__box logo__box">
                     <img src="./assets/img/icons/logo.png" alt="logo alura geek" class="header__logo__img">
                     <p class="header__logo__description"><span class="header__logo__description--active">Alura</span>Geek</p>
                 </a>
@@ -36,7 +39,7 @@
             <div class="hero__main contenedor">
                 <h2 class="hero__title">Febrero Promocional</h2>
                 <p class="hero__description">Productos seleccionados con 33% de descuento</p>
-                <a href="#" class="hero__btn">Ver Consolas</a>
+                <a href="#" class="hero__btn btn3">Ver Consolas</a>
             </div>
         </section>
         <section class="products">
@@ -181,7 +184,7 @@
         <div class="footer__contact">
             <div class="footer__contact__main contenedor">
                 <div class="footer__contact__logo">
-                    <a href="./index.html">
+                    <a href="./index.html" class="logo__box">
                         <img src="./assets/img/icons/logo.png" alt="logo alura geek" class="footer__contact__logo__img">
                         <p class="footer__contact__logo__description"><span class="footer__contact__logo__description--active">Alura</span>Geek</p>
                     </a>
@@ -196,15 +199,15 @@
                 </div>
                 <div class="footer__contact__form">
                     <h2 class="contact__form__title">Habla con nosotros</h2>
-                    <input type="text" class="contact__form__input" value="Nombre">
-                    <textarea class="contact__form__textarea" name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" ></textarea>
-                    <input type="submit" value="Enviar mensaje">
+                    <input type="text" class="contact__form__input contact__input" placeholder="Nombre">
+                    <textarea class="contact__form__textarea contact__input" name="" id="" cols="30" rows="4" placeholder="Escribe tu mensaje" ></textarea>
+                    <a href="#"><input class="contact__from__btn btn3" type="submit" value="Enviar mensaje"></a>
                 </div>
             </div>
         </div>
         <div class="footer__rights">
             <div class="footer__rights__main contenedor">
-                <p class="footer__rights__description">Desarrollado por &copy; <span class="german">German</span> - 2022 </p>
+                <p class="footer__rights__description">Desarrollado por &copy; <a href="https://github.com/germandcb" class="german" target="_blank">German</a> - 2022 </p>
             </div>
         </div>
     </footer>

@@ -7,6 +7,7 @@
     --second-color: #464646;
 
     --fondo1: #F5F5F5;
+    --fondo-footer: #EAF2FD;
 } 
 
 html {
@@ -70,4 +71,19 @@ img {
 .btn2 {
     color: var(--main-blue);
     font-weight: 500;
+}
+.btn3 {
+    border: none;
+    background-color: var(--main-blue);
+    padding: 2rem 2rem;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 100;
+    cursor: pointer;
+    width: fit-content;
+}
+.logo__box {
+    align-items: center;
+    gap: 1rem;
+    display: flex;
 }

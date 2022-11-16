@@ -1,0 +1,47 @@
+.footer__contact {
+    background: var(--fondo-footer);
+    padding: 6rem 0;
+}
+
+.footer__contact__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.4fr;
+    gap: 4rem;
+}
+
+/*----------------------footer contact logo-----------------------------*/
+.footer__contact__logo__description {
+    color: var(--black);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.footer__contact__logo__description--active{
+    color: var(--main-blue);
+}
+
+/*----------------------footer contact links-----------------------------*/
+.footer__contact__links {
+    display: flex;
+    flex-direction: column;
+}
+.footer__link {
+    color: var(--second-color);
+}
+.footer__link:hover {
+    color: var(--main-blue);
+}
+
+/*----------------------footer contact form-----------------------------*/
+.footer__contact__form {
+    display: grid;
+}
+.contact__form__title {
+    font-size: 2rem;
+    margin: unset;
+}
+.contact__input {
+    padding: 2rem 1rem;
+    border: none;
+    margin: 1rem 0;
+    outline: none;
+}
