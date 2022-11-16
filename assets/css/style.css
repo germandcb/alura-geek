@@ -4,8 +4,10 @@
     --black: #000000; 
     --white: #FFFFFF;
     --main-blue: #2A7AE4;
+    --blue-dark: #1660c0;
     --second-color: #464646;
 
+    --fondo: #E5E5E5;
     --fondo1: #F5F5F5;
     --fondo-footer: #EAF2FD;
 } 
@@ -22,6 +24,9 @@ body {
     font-family: var(--main-source);
     font-size: 1.6rem;
     line-height: 2;
+}
+.main {
+    background: var(--fondo);
 }
 
 /* Globales */
@@ -81,6 +86,10 @@ img {
     font-weight: 100;
     cursor: pointer;
     width: fit-content;
+}
+.btn3:hover {
+    background: var(--blue-dark);
+    transition: 0.5s;
 }
 .logo__box {
     align-items: center;

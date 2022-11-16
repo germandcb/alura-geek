@@ -1,0 +1,27 @@
+.login {
+    padding: 10rem 0;
+}
+.login__main {
+    display: flex;
+    justify-content: center;
+}
+.login__form {
+    display: grid;
+    gap: 3rem;
+    width: 50%;
+}
+.login__title {
+    margin: unset;
+    font-size: 2rem;
+    text-align: center;
+}
+.login__input {
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    border-bottom: 1px solid var(--second-color);
+}
+.login__btn {
+    width: 100%;
+}

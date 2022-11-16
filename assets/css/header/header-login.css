@@ -1,0 +1,7 @@
+.header__main {
+    justify-content: start;
+    gap: 3rem;
+}
+.header__login {
+    display: none;
+}

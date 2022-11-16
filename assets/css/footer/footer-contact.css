@@ -44,4 +44,6 @@
     border: none;
     margin: 1rem 0;
     outline: none;
+    border-radius: 1rem;
+    border-bottom: 0.1rem solid var(--second-color);
 }

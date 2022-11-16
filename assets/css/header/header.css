@@ -23,9 +23,7 @@
 }
 
 /* header search */
-.header__search {
-    width: 60%;
-}
+
 .header__search__input{
     background-color: var(--fondo1);
     border-radius: 5rem;
@@ -46,4 +44,5 @@
 .header__login:hover {
     color: var(--white);
     background-color: var(--main-blue);
+    transition: 0.5s;
 }
