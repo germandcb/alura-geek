@@ -26,7 +26,10 @@
 
 .hero__btn {
     padding: 2rem 2rem;
+    width: fit-content;
     color: var(--white);
+    font-size: 2rem;
+    font-weight: 100;
     background-color: var(--main-blue);
 }
 

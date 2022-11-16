@@ -1,0 +1,33 @@
+.product__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    width: 18.2rem;
+    height: 35rem;
+}
+
+.product__section__title,
+.product__description,
+.product__price {
+    color: var(--second-color);
+    margin: unset;
+}
+
+.product__price,
+.product__btn {
+    font-weight: 800;
+}
+
+.product__section__btn {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.product__section__btn::after {
+    content: url(../../img/icons/Vector.png);
+}

@@ -4,6 +4,7 @@
     --black: #000000; 
     --white: #FFFFFF;
     --main-blue: #2A7AE4;
+    --second-color: #464646;
 
     --fondo1: #F5F5F5;
 } 
@@ -65,4 +66,8 @@ img {
     font-size: 1.8rem;
     font-weight: 400;
     border: 1px solid var(--main-blue);
+}
+.btn2 {
+    color: var(--main-blue);
+    font-weight: 500;
 }
