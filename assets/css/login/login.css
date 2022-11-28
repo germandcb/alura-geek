@@ -8,7 +8,12 @@
 .login__form {
     display: grid;
     gap: 3rem;
-    width: 50%;
+    width: 85%;
+}
+@media (min-width: 360px) {
+    .login__form {
+        width: 50%;
+    }
 }
 .login__title {
     margin: unset;

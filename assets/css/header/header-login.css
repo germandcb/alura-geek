@@ -1,6 +1,11 @@
 .header__main {
-    justify-content: start;
+    justify-content: space-between;
     gap: 3rem;
+}
+@media (min-width: 360px) {
+    .header__main {
+        justify-content: start;
+    }
 }
 .header__login {
     display: none;
