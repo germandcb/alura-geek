@@ -6,8 +6,29 @@
 }
 
 .product {
-    width: 18.2rem;
-    height: 35rem;
+    width: 15rem;
+    height: 30rem;
+}
+
+.product:nth-child(4),
+.product:nth-child(5) {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .product {
+        width: 18.2rem;
+    }
+    .product:nth-child(n) {
+        display: block;
+    }
+}
+
+@media (min-width: 360px) {
+    .product {
+        width: 18.2rem;
+    }
 }
 
 .product__section__title,

@@ -1,15 +1,32 @@
 .footer__contact {
     background: var(--fondo-footer);
-    padding: 6rem 0;
+    padding: 2rem 0;
+}
+
+@media (min-width: 360px) {
+    .footer__contact {
+        padding: 6rem 0;
+    }
 }
 
 .footer__contact__main {
     display: grid;
-    grid-template-columns: 1fr 1fr 2.4fr;
-    gap: 4rem;
+    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 560px) {
+    .footer__contact__main {
+        grid-template-columns: 1fr 1fr 2.4fr;
+        gap: 4rem;
+    }
 }
 
 /*----------------------footer contact logo-----------------------------*/
+.footer__logo {
+    justify-content: center;
+}
 .footer__contact__logo__description {
     color: var(--black);
     font-size: 2.2rem;

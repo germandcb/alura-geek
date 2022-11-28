@@ -10,12 +10,31 @@
 }
 
 /* header logo */
-.header__logo {}
 
+.header__logo__box {
+    width: fit-content;
+    height: 2.8rem;
+}
+
+.header__logo__img {
+    max-width: 30%;
+}
+
+@media (min-width: 360px) {
+    .header__logo__img {
+        width: 100%;
+    }
+}
 .header__logo__description {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     color: var(--black);
     font-weight: bold;
+}
+
+@media (min-width: 360px) {
+    .header__logo__description {
+        font-size: 2.2rem;
+    }
 }
 
 .header__logo__description--active {
@@ -29,9 +48,18 @@
     border-radius: 5rem;
     padding: 1.5rem 3rem; 
     border: none;
-    width: 40%;
+    order: 2;
+    width: 10%;
     outline: none;
 }
+
+@media (min-width: 360px) {
+    .header__search__input {
+        width: 40%;
+        order: 0;
+    }
+}
+
 .header__search__input::after {
     content: url(../../img/icons/lupa.png);
 }
@@ -40,6 +68,13 @@
 .header__login {
     background-color: var(--white);
     color: var(--main-blue);
+    width: 30%;
+}
+
+@media (min-width: 360px) {
+    .header__login {
+        width: fit-content;
+    }
 }
 .header__login:hover {
     color: var(--white);

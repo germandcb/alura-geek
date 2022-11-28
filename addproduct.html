@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="./assets/css/footer/footer.css">
     <link rel="stylesheet" href="./assets/css/footer/footer-contact.css">
     <link rel="stylesheet" href="./assets/css/footer/footer-rights.css">
-    <link rel="stylesheet" href="./assets/css/products/product-box.css">
-    <link rel="stylesheet" href="./assets/css/products/products.css">
-</head>
 <body>
     <header class="header">
         <nav class="header__main contenedor">
@@ -34,13 +31,26 @@
     </header>
 
     <main class="main">
+        <section class="add-product">
+            <div class="add-product__main contenedor">
+                <form action="" class="add-product__form">
+                    <h2 class="add-product__title">Agregar nuevo producto</h2>
+                    <input type="url" class="add-product__input" placeholder="URL de imagen">
+                    <input type="text" class="add-product__input" placeholder="Categoria">
+                    <input type="text" class="add-product__input" placeholder="Nombre del producto">
+                    <input type="text" class="add-product__input" placeholder="Precio del producto">
+                    <textarea name="" id="" cols="30" rows="10" class="add-product__input" placeholder="Descripción del producto"></textarea>
+                    <input type="submit" class="add-product__btn btn3" value="Agregar producto">
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer__contact">
             <div class="footer__contact__main contenedor">
                 <div class="footer__contact__logo">
-                    <a href="./index.html" class="logo__box">
+                    <a href="./index.html" class="footer__logo logo__box">
                         <img src="./assets/img/icons/logo.png" alt="logo alura geek" class="footer__contact__logo__img">
                         <p class="footer__contact__logo__description"><span class="footer__contact__logo__description--active">Alura</span>Geek</p>
                     </a>
