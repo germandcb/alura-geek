@@ -1,0 +1,21 @@
+.add-product {
+    padding: 10rem 0;
+}
+.add-product__main {
+    display: flex;
+    justify-content: center;
+}
+.add-product__form {
+    display: grid;
+    gap: 1rem;
+    width: 90%;
+}
+@media (min-width: 768px) {
+    .add-product__form {
+        width: 50%;
+    }
+}
+.add-product__title {
+    margin: unset;
+    font-size: 4rem;
+}

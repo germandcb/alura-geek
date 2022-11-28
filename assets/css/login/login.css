@@ -7,7 +7,7 @@
 }
 .login__form {
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
     width: 85%;
 }
 @media (min-width: 360px) {
@@ -19,14 +19,4 @@
     margin: unset;
     font-size: 2rem;
     text-align: center;
-}
-.login__input {
-    padding: 2rem 1rem;
-    border: none;
-    border-radius: 1rem;
-    outline: none;
-    border-bottom: 1px solid var(--second-color);
-}
-.login__btn {
-    width: 100%;
 }

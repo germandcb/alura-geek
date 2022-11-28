@@ -6,6 +6,7 @@
     --main-blue: #2A7AE4;
     --blue-dark: #1660c0;
     --second-color: #464646;
+    --border-box: #C8C8C8;
 
     --fondo: #E5E5E5;
     --fondo1: #F5F5F5;
@@ -72,6 +73,7 @@ img {
 .centrar-texto {
     text-align: center;
 }
+.btn-ad,
 .btn {
     padding: 0 2rem;
     text-align: center;
@@ -79,6 +81,11 @@ img {
     font-weight: 400;
     border: 1px solid var(--main-blue);
 }
+
+.btn-ad {
+    padding: 0.6rem 2rem;
+}
+
 @media (min-width:360px) {
     .btn {
         padding: 0.6rem 6rem;

@@ -6,7 +6,7 @@
 }
 
 .product {
-    width: 15rem;
+    width: 15.2rem;
     height: 30rem;
 }
 
@@ -15,6 +15,11 @@
     display: none;
 }
 
+@media (min-width: 360px) {
+    .product {
+        width: 15rem;
+    }
+}
 
 @media (min-width: 768px) {
     .product {
@@ -25,11 +30,16 @@
     }
 }
 
-@media (min-width: 360px) {
-    .product {
-        width: 18.2rem;
+.product__section__title {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .product__section__title {
+        font-size: 4rem;
     }
 }
+
 
 .product__section__title,
 .product__description,
