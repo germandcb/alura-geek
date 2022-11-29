@@ -67,6 +67,7 @@
 /*----------------------footer contact form-----------------------------*/
 .footer__contact__form {
     display: grid;
+    gap: 1rem;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
 }
@@ -85,11 +86,7 @@
     font-size: 2rem;
     margin: unset;
 }
-.contact__input {
-    padding: 2rem 1rem;
-    border: none;
-    margin: 1rem 0;
-    outline: none;
-    border-radius: 1rem;
-    border-bottom: 0.1rem solid var(--border-box);
+.contact__form__box {
+    display: flex;
+    flex-direction: column;
 }

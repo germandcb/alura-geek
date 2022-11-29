@@ -8,39 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;600;800&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/header/header.css">
-    <link rel="stylesheet" href="./assets/css/header/header-login.css">
-    <link rel="stylesheet" href="./assets/css/login/login.css">
-    <link rel="stylesheet" href="./assets/css/form/from.css">
-    <link rel="stylesheet" href="./assets/css/footer/footer.css">
-    <link rel="stylesheet" href="./assets/css/footer/footer-contact.css">
-    <link rel="stylesheet" href="./assets/css/footer/footer-rights.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/header/header.css">
+    <link rel="stylesheet" href="../assets/css/form/form.css">
+    <link rel="stylesheet" href="../assets/css/messages/messages.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-contact.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-rights.css">
 </head>
 <body>
     <header class="header">
         <nav class="header__main contenedor">
             <div class="header__logo">
                 <a href="./index.html" class="header__logo__box logo__box">
-                    <img src="./assets/img/icons/logo.png" alt="logo alura geek" class="header__logo__img">
+                    <img src="../assets/img/icons/logo.png" alt="logo alura geek" class="header__logo__img">
                     <p class="header__logo__description"><span class="header__logo__description--active">Alura</span>Geek</p>
                 </a>
             </div>
             <input type="search" class="header__search__input" placeholder="¿Qué deseas buscar?">
-            <a href="./login.html" class="header__login btn">Login</a>
+            <a href="./products.html" class="header__login btn-ad">Menú Administrador</a>
         </nav>
     </header>
 
     <main class="main">
-        <section class="login">
-            <div class="login__main contenedor">
-                <form action="" class="login__form">
-                    <h2 class="login__title">Iniciar Seción</h2>
-                    <input type="email" class="from__input" placeholder="Escriba su correo electronico">
-                    <input type="password" class="from__input" placeholder="Escriba su contraseñas">
-                    <input type="submit" class="from__btn btn3" value="Entrar">
-                </form>
+        <section class="messages-sent">
+            <div class="messages-sent__main contenedor">
+                <div class="messages-sent__box">
+                    <h2 class="messages-sent__title">Tu mensaje fue exitosamente enviado :)</h2>
+                    <img src="../assets/img/icons/check.svg" alt="" class="messages-sent__icon">
+                    <a href="./index.html" class="messages-sent__btn btn3">Regresar</a>
+                </div>
             </div>
         </section>
     </main>
@@ -50,7 +48,7 @@
             <div class="footer__contact__main contenedor">
                 <div class="footer__contact__logo">
                     <a href="./index.html" class="footer__logo logo__box">
-                        <img src="./assets/img/icons/logo.png" alt="logo alura geek" class="footer__contact__logo__img">
+                        <img src="../assets/img/icons/logo.png" alt="logo alura geek" class="footer__contact__logo__img">
                         <p class="footer__contact__logo__description"><span class="footer__contact__logo__description--active">Alura</span>Geek</p>
                     </a>
                 </div>
@@ -62,12 +60,18 @@
                     <a href="" class="footer__link">Quiero ser franquiciado</a>
                     <a href="" class="footer__link">Anúncie aqui</a>
                 </div>
-                <from class="footer__contact__form">
+                <form action="./messagesent.html" class="footer__contact__form">
                     <h2 class="contact__form__title">Habla con nosotros</h2>
-                    <input type="text" class="contact__form__input contact__input" placeholder="Nombre">
-                    <textarea class="contact__form__textarea contact__input" name="" id="" cols="30" rows="4" placeholder="Escribe tu mensaje" ></textarea>
-                    <input type="submit" value="Enviar mensaje" class="contact__from__btn btn3">
-                </from>
+                    <div class="contact__form__box">
+                        <input type="text" class="form__input" placeholder="Nombre" required data-tipo="name" maxlength="40">
+                        <span class="form__input-message-erro">Este campo no es valido</span>
+                    </div>
+                    <div class="contact__form__box">
+                        <textarea class="form__input " name="" id="" cols="30" rows="4" placeholder="Escribe tu mensaje" required data-tipo="message" minlength="1" maxlength="120"></textarea>
+                        <span class="form__input-message-erro">Este campo no es valido</span>
+                    </div>
+                    <input type="submit" value="Enviar mensaje" class="btn3">
+                </form>
             </div>
         </div>
         <div class="footer__rights">
@@ -76,5 +80,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/app.js" type="module"></script>
 </body>
 </html>

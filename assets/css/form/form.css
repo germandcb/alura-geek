@@ -1,0 +1,29 @@
+.form__input {
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    border-bottom: 1px solid var(--border-box);
+}
+.form__btn {
+    padding: 2rem 0;
+    width: 100%;
+}
+/*------------------ input invalid - message -------------------*/
+
+.form__input-message-erro {
+    display: none;
+}
+
+.content__form--invalid .form__input {
+    border: 1px solid var(--invalid);
+}
+
+.content__form--invalid .form__input-message-erro  {
+    display: block;
+    color: var(--invalid);
+}
+
+.content__form--invalid .form__input::placeholder  {
+    color: var(--invalid);
+}

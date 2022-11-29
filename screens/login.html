@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura | Geek </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;600;800&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/header/header.css">
+    <link rel="stylesheet" href="../assets/css/header/header-login.css">
+    <link rel="stylesheet" href="../assets/css/login/login.css">
+    <link rel="stylesheet" href="../assets/css/form/form.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-contact.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-rights.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__main contenedor">
+            <div class="header__logo">
+                <a href="./index.html" class="header__logo__box logo__box">
+                    <img src="../assets/img/icons/logo.png" alt="logo alura geek" class="header__logo__img">
+                    <p class="header__logo__description"><span class="header__logo__description--active">Alura</span>Geek</p>
+                </a>
+            </div>
+            <input type="search" class="header__search__input" placeholder="¿Qué deseas buscar?">
+            <a href="./login.html" class="header__login btn">Login</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="login">
+            <div class="login__main contenedor">
+                <form action="./messagesent.html" class="login__form">
+                    <h2 class="login__title">Iniciar Seción</h2>
+                    <div class="contact__form__box">
+                        <input type="email" class="form__input" placeholder="Escriba su correo electronico" required data-tipo="email">
+                        <span class="form__input-message-erro">Este campo no es valido</span>
+                    </div>
+                    <div class="contact__form__box">
+                        <input type="password" class="form__input" placeholder="Escriba su contraseñas" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
+                        <span class="form__input-message-erro">Este campo no es valido</span>
+                    </div>
+                    <input type="submit" class="form__btn btn3" value="Entrar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contact">
+            <div class="footer__contact__main contenedor">
+                <div class="footer__contact__logo">
+                    <a href="./index.html" class="footer__logo logo__box">
+                        <img src="../assets/img/icons/logo.png" alt="logo alura geek" class="footer__contact__logo__img">
+                        <p class="footer__contact__logo__description"><span class="footer__contact__logo__description--active">Alura</span>Geek</p>
+                    </a>
+                </div>
+                <div class="footer__contact__links">
+                    <a href="" class="footer__link">Quienes Somos</a>
+                    <a href="" class="footer__link">Politica de privacidad</a>
+                    <a href="" class="footer__link">Programa de fidelidad</a>
+                    <a href="" class="footer__link">Nuestras Tiendas</a>
+                    <a href="" class="footer__link">Quiero ser franquiciado</a>
+                    <a href="" class="footer__link">Anúncie aqui</a>
+                </div>
+                <form action="./messagesent.html" class="footer__contact__form">
+                    <h2 class="contact__form__title">Habla con nosotros</h2>
+                    <div class="contact__form__box">
+                        <input type="text" class="form__input" placeholder="Nombre" required data-tipo="name" maxlength="40">
+                        <span class="form__input-message-erro">Este campo no es valido</span>
+                    </div>
+                    <div class="contact__form__box">
+                        <textarea class="form__input " name="" id="" cols="30" rows="4" placeholder="Escribe tu mensaje" required data-tipo="message" minlength="1" maxlength="120"></textarea>
+                        <span class="form__input-message-erro">Este campo no es valido</span>
+                    </div>
+                    <input type="submit" value="Enviar mensaje" class="btn3">
+                </form>
+            </div>
+        </div>
+        <div class="footer__rights">
+            <div class="footer__rights__main contenedor">
+                <p class="footer__rights__description">Desarrollado por &copy; <a href="https://github.com/germandcb" class="german" target="_blank">Germandcb</a> - 2022 </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/app.js" type="module"></script>
+</body>
+</html>
